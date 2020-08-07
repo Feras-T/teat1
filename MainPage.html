@@ -1,0 +1,87 @@
+<?php 
+
+	
+
+	if(isset($_POST['Forward'])){
+		
+		
+			//echo 'form is valid';
+			header('Location: index.html');
+		}
+if(isset($_POST['Left'])){
+		
+		
+			//echo 'form is valid';
+			header('Location: index2.php');
+		}
+		if(isset($_POST['Stop'])){
+		
+		
+			//echo 'form is valid';
+			header('Location: index3.php');
+		}if(isset($_POST['Right'])){
+		
+		
+			//echo 'form is valid';
+			header('Location: index4.php');
+		}if(isset($_POST['Backward'])){
+		
+		
+			//echo 'form is valid';
+			header('Location: index5.php');
+		}
+	// end POST check
+
+?>
+
+<!DOCTYPE html>
+<html>
+	
+	<?php include('header.php'); ?>
+
+	<section class="container grey-text">
+		<h4 class="center">Options </h4>
+		<form class="white" action="MainPage.php" method="POST">
+			
+	
+			<div class="center">
+				<input type="submit" name="Forward" value="Forward" class="btn brand z-depth-0">
+
+				
+				</div>
+				
+
+
+
+					<div class="center">
+					
+
+				"""""""
+
+				<div class="center">
+
+				<input type="submit" name="Left" value="Left" class="btn brand z-depth-0">
+
+                <input type="submit" name="Stop" value="Stop" class="btn brand z-depth-0">
+
+				<input type="submit" name="Right" value="Right" class="btn brand z-depth-0">
+
+
+					<div class="center">
+					
+
+				"""""""
+
+				<div class="center">
+
+
+
+				<input type="submit" name="Backward" value="Backward" class="btn brand z-depth-0">
+				
+			</div>
+		</form>
+	</section>
+
+	<?php include('footer.php'); ?>
+
+</html>
